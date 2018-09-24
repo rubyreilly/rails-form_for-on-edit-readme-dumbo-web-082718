@@ -761,3 +761,24 @@ Processing by PostsController#edit as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
   Rendered posts/edit.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 347ms (Views: 318.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-09-24 15:22:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/rubyreilly/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 29ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for ::1 at 2018-09-24 15:23:18 -0400
+Processing by Rails::InfoController#properties as */*
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  Rendered /Users/rubyreilly/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/info/properties.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2018-09-24 15:23:51 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 356ms (Views: 353.6ms | ActiveRecord: 0.3ms)
